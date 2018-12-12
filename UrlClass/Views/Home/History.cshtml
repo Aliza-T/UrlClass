@@ -1,0 +1,12 @@
+﻿@using UrlClass.Data
+@model IEnumerable<Url>
+
+<div class="row">
+    <div class="col-lg-6 col-md-offset-3">
+     @foreach (Url url in Model)
+        {
+            <h3><a href="@url.OriginalUrl">@url.OriginalUrl</a></h3>
+            <h5>Views: @url.Views</h5>   
+        }
+    </div>
+</div>
